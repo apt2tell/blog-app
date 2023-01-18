@@ -4,8 +4,6 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :name
       t.text :bio
       t.string :photo
-      t.datetime :updated_at
-      t.datetime :created_at
       t.integer :postCounter
 
       t.timestamps
