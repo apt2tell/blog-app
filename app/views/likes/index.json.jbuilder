@@ -1,1 +1,1 @@
-json.array! @likes, partial: "likes/like", as: :like
+json.array! @likes, partial: 'likes/like', as: :like
