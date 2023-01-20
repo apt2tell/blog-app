@@ -7,7 +7,7 @@ class Post < ApplicationRecord
 
   # Increment user posts count
   def increment_user_post_count
-    user.increment!(:posts_count)
+    author.increment!(:posts_counter)
   end
 
   # Return user most recent comments
