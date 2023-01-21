@@ -8,5 +8,5 @@ class Like < ApplicationRecord
     post.increment!(:likes_counter)
   end
 
-  increment_like_count
+  private :increment_like_count
 end
