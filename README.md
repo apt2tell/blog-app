@@ -1,12 +1,3 @@
-<a name="readme-top"></a>
-
-<div align="center">
-
-  <img src="https://raw.githubusercontent.com/microverseinc/readme-template/master/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -34,15 +25,15 @@
 
 # 📖 Blog app - creating a data model <a name="about-project"></a>
 
-**Ruby Capstone** 
+**Ruby on Rails** 
 > This project uses MVC approach to implement the design  using `rails gem` and `postgresql`. This app is built on Ruby on rails using RubyGem as the software package system. It is designed using ORM technique - database migration file to maintain database schema
 
 
 ## 🛠 Built With <a name="built-with"></a>
 
-> Ruby
-> postgresql
-> Rails
+> `Ruby 3.1.3`
+> `postgresql`
+> `Rails 7`
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -56,9 +47,10 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-> Rails server
-> Rails new
-> Rails generate
+- [] **Comments**
+- [] **Posts**
+- [] **Likes**
+- [] **Users**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,7 +79,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 - `https://github.com/Okechukwu-muokwugwo/blog-app.git` if your're using https or git 
-- `https://github.com/Okechukwu-muokwugwo/blog-app.git` if you prefer ssh and hit enter.
+- `git@github.com:Okechukwu-muokwugwo/blog-app.git` if you prefer ssh and hit enter.
 - create a directory in your preferred location (e.g in the Desktop or Document directory)
 
 
@@ -133,7 +125,9 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> To be added later
+- [] **[Add Devise.]**
+- [] **[Add authorization rules.]**
+- [] **[Integration specs for Views.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
