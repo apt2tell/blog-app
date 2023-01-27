@@ -1,1 +1,21 @@
-<h1>Here is a list of posts for a given user</h1>
+<div class="post-container">
+  <div class="post-details border">
+    <div class="post-header">
+      <h3>
+        Post #<%= @post.id %> by <%= @user.name %>
+      </h3>
+      <p>
+        Comments: <%= @comments.size %> , Likes: <%= @likes.size %>
+      </p>
+    </div>
+    <p>
+      <%= @post.text %>
+    </p>
+  </div>
+
+  <div class="post-comments border">
+    <% @comments.each do |comment| %>
+      <p><%= comment.author.name %>: <%= comment.text %></p>
+    <% end %>
+  </div>
+</div>
