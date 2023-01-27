@@ -1,1 +1,19 @@
-<h1>User posts details</h1>
+<div class="user-specific-post">
+  <%= render partial: "users/user_info", locals: {user: @user} %>
+
+  <div class="post-info">
+    <% @posts.each do |post| %>
+      <%= render partial: "users/user_post", locals: {post: post} %>
+
+      <div class="comments border">
+        <% post.recent_comments.each do |comment| %>
+          <p><%= comment.author.name %>: <%= comment.text %></p>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div>
+    <p class="pagination">Pagination</p>
+</div>
