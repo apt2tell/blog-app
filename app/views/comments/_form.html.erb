@@ -1,0 +1,10 @@
+<%= render 'shared/flash' %>
+<%= form_with model: Comment, url: user_post_comments_path(@user, @post) do |form| %>
+  <div class="form-control">
+    <%= form.label :text, "Text" %>
+    <%= form.text_area :text, size: "70x15" %>
+  </div>
+  <div class="form-submit">
+    <%= form.submit "Add Comment" %>
+  </div>
+<% end %>
