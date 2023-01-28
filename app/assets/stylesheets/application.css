@@ -166,3 +166,31 @@ html {
   width: 70%;
   margin: auto;
 }
+
+.like_post_btn {
+  padding: 0.3rem;
+  background: antiquewhite;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: center;
+  margin-left: 3.8rem;
+}
+
+.form-submit input {
+  width: 35rem;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}

@@ -4,8 +4,9 @@
       <h3>
         Post #<%= @post.id %> by <%= @user.name %>
       </h3>
+      <%= button_to 'Like Post', user_post_likes_path(@user, @post), method: :post, class: 'like_post_btn'%>
       <p>
-        Comments: <%= @comments.size %> , Likes: <%= @likes.size %>
+        Comments: <%= @post.comments_counter %> , Likes: <%= @post.likes_counter %>
       </p>
     </div>
     <p>
@@ -14,8 +15,9 @@
   </div>
 
   <div class="post-comments border">
-    <% @comments.each do |comment| %>
+    <% @post.comments.each do |comment| %>
       <p><%= comment.author.name %>: <%= comment.text %></p>
     <% end %>
   </div>
 </div>
+<%= render 'comments/form' %>
