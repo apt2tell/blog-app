@@ -14,7 +14,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       if @post.save
         format.html { redirect_to user_posts_path(current_user.id), notice: 'successfully added a post' }
-      else 
+      else
         flash[:error] = @post.errors.full_messages
         format.html { redirect_to new_user_post_path(current_user.id) }
       end
@@ -27,7 +27,7 @@ class PostsController < ApplicationController
     @post.comments.includes(:user)
   end
 
-  private 
+  private
 
   def post_params
     params.require(:post).permit(:title, :text)
