@@ -46,8 +46,8 @@ describe 'GET user#index', type: :feature do
 
   describe 'GET user#show' do
     it "redirects to the user's show page" do
-        click_link(href: user_path(@users.first))
-        expect(page).to have_current_path(user_path(@users.first))
+      click_link(href: user_path(@users.first))
+      expect(page).to have_current_path(user_path(@users.first))
     end
   end
 end
