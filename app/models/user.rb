@@ -10,7 +10,7 @@ class User < ApplicationRecord
 
   # Most recent posts
   def recent_posts
-    posts.order(created_at: :desc).limit(3)
+    posts.first(3)
   end
 
   def set_default
