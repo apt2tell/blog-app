@@ -56,7 +56,7 @@ RSpec.describe 'GET users#show', type: :feature do
     end
 
     it "renders the number of user's posts count" do
-      @users.first.most_recent_posts.each do |post|
+      @users.first.recent_posts.each do |post|
         expect(page).to have_content(post.title)
       end
     end
