@@ -94,4 +94,9 @@ RSpec.describe 'post#index', type: :feature do
       end
     end
 
+    it 'has a section pagination if there are more posts' do
+      expect(page).to have_content('Pagination')
+    end
+  end
+
 end
