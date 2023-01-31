@@ -82,4 +82,10 @@ RSpec.describe 'post#index', type: :feature do
       end
     end
 
+    it 'has first comments on a post' do
+      @posts.first.most_recent_comments.each do |comment|
+        expect(page).to have_content(comment.text)
+      end
+    end
+
 end
