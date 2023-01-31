@@ -88,4 +88,10 @@ RSpec.describe 'post#index', type: :feature do
       end
     end
 
+    it 'displays number of comments a post has' do
+      @posts.each do |post|
+        expect(page).to have_content("Comments: #{post.comments_counter}")
+      end
+    end
+
 end
