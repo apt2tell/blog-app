@@ -53,5 +53,4 @@ describe 'GET user#index', type: :feature do
       end
     end
   end
-
 end
