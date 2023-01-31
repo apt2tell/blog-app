@@ -76,4 +76,10 @@ RSpec.describe 'post#index', type: :feature do
       end
     end
 
+    it "displays post's body" do
+      @posts.each do |post|
+        expect(page).to have_content(post.text)
+      end
+    end
+
 end
