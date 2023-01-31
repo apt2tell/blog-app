@@ -99,4 +99,8 @@ RSpec.describe 'post#index', type: :feature do
     end
   end
 
+  it 'should redirect to the post details page' do
+    click_link('View More', href: user_post_path(@users.first, @posts.first))
+    expect(page).to have_current_path(user_post_path(@users.first, @posts.first))
+  end
 end
