@@ -2,7 +2,7 @@
   <div class="post-details border">
     <div class="post-header">
       <h3>
-        Post #<%= @post.id %> by <%= @user.name %>
+        Post #<%= @post.title %> by <%= @user.name %>
       </h3>
       <%= button_to 'Like Post', user_post_likes_path(@user, @post), method: :post, class: 'like_post_btn'%>
       <p>
