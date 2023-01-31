@@ -36,4 +36,12 @@ describe 'GET user#index', type: :feature do
     end
   end
 
+  describe 'View User Posts Count' do
+    it 'displays the number of posts for each user' do
+      @users.each do |user|
+        expect(page).to have_content("Number of posts: #{user.posts_counter}")
+      end
+    end
+  end
+
 end
