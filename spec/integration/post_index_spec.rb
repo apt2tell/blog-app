@@ -70,4 +70,10 @@ RSpec.describe 'post#index', type: :feature do
       end
     end
 
+    it "has post's title" do
+      @posts.each do |post|
+        expect(page).to have_content(post.title)
+      end
+    end
+
 end
