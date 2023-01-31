@@ -58,4 +58,10 @@ RSpec.describe 'post#index', type: :feature do
       end
     end
 
+    it "has user's username" do
+      @users.each do |user|
+        expect(page).to have_content(user.name)
+      end
+    end
+
 end
