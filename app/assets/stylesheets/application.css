@@ -210,3 +210,11 @@ html {
   display: flex;
   justify-content: space-around;
 }
+
+.notice {
+  color: #0f0;
+}
+
+.alert {
+  color: #0f0;
+}
