@@ -219,7 +219,6 @@ html {
   color: #0f0;
 }
 
-
 .new-user {
   display: flex;
   justify-content: center;
@@ -234,9 +233,9 @@ html {
   box-shadow: 1px 1px 1px 1px black;
 }
 
-.field input, textarea {
+.field input,
+textarea {
   text-align: center;
   width: 100%;
   padding: 2px;
 }
-
