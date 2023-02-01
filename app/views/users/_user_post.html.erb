@@ -3,9 +3,10 @@
   <div>
     <h4><%= post.title %></h4>
     <p><%= post.text %></p>
-    <div>
+    <div class = "reactions">
       <span>Comments: <%= post.comments_counter %></span>
       <span>Likes: <%= post.likes_counter %></span>
+      <%= link_to "View More", user_post_path(@user, post), class: "view_more_btn"%>
     </div>
   </div>
 </div>

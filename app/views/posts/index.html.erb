@@ -2,7 +2,7 @@
   <%= render partial: "users/user_info", locals: {user: @user} %>
 
   <div class="post-info">
-    <% @user_posts.each do |post| %>
+    <% @user.posts.each do |post| %>
       <%= render partial: "users/user_post", locals: {post: post} %>
 
       <div class="comments border">
@@ -14,6 +14,6 @@
   </div>
 </div>
 
-<div>
-    <p class="pagination">Pagination</p>
+<div class="pagination">
+    Pagination
 </div>
