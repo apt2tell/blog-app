@@ -28,6 +28,16 @@ class PostsController < ApplicationController
     @post.comments.includes(:user)
   end
 
+  def destroy
+    user = User.find(params[:user_id])
+    post = user.posts.find(params[:id])
+    post.destroy
+
+    respond_to do |format|
+      format.html { redirect_to user_posts_path(user.id), notice: "Successfully removed post" }
+    end
+  end
+
   private
 
   def post_params
