@@ -20,4 +20,10 @@ class User < ApplicationRecord
   def set_default
     self.posts_counter = 0 if posts_counter.nil?
   end
+
+  Roles = [:admin, :user]
+
+  def admin?
+   role == :admin
+  end
 end
