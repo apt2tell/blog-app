@@ -23,7 +23,7 @@ class CommentsController < ApplicationController
     comment.destroy
     post.decrement!(:comments_counter)
     respond_to do |format|
-      format.html { redirect_to user_post_path(post.author, post), notice: 'Comment was successfully destroyed'}
+      format.html { redirect_to user_post_path(post.author, post), notice: 'Comment was successfully destroyed' }
     end
   end
 

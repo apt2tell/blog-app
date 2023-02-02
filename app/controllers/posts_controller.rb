@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   load_and_authorize_resource
-  
+
   def index
     @user = User.includes(posts: [:comments]).find(params[:user_id])
   end
@@ -34,7 +34,7 @@ class PostsController < ApplicationController
     post.destroy
 
     respond_to do |format|
-      format.html { redirect_to user_posts_path(user.id), notice: "Successfully removed post" }
+      format.html { redirect_to user_posts_path(user.id), notice: 'Successfully removed post' }
     end
   end
 
