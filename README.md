@@ -25,15 +25,13 @@
 
 # 📖 Blog app - creating a data model <a name="about-project"></a>
 
-**Ruby on Rails** 
-> This project uses MVC approach to implement the design  using `rails gem` and `postgresql`. This app is built on Ruby on rails using RubyGem as the software package system. It is designed using ORM technique - database migration file to maintain database schema
+**Ruby on Rails**
 
+> This project uses MVC approach to implement the design using `rails gem` and `postgresql`. This app is built on Ruby on rails using RubyGem as the software package system. It is designed using ORM technique - database migration file to maintain database schema
 
 ## 🛠 Built With <a name="built-with"></a>
 
-> `Ruby 3.1.3`
-> `postgresql`
-> `Rails 7`
+> `Ruby 3.1.3` > `postgresql` > `Rails 7`
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -47,6 +45,7 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
+
 - [] **Comments**
 - [] **Posts**
 - [] **Likes**
@@ -55,6 +54,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Coming soon](#)
@@ -78,10 +78,9 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- `https://github.com/Okechukwu-muokwugwo/blog-app.git` if your're using https or git 
+- `https://github.com/Okechukwu-muokwugwo/blog-app.git` if your're using https or git
 - `git@github.com:Okechukwu-muokwugwo/blog-app.git` if you prefer ssh and hit enter.
 - create a directory in your preferred location (e.g in the Desktop or Document directory)
-
 
 ### Install
 
@@ -105,9 +104,7 @@ To run tests, run the following command:
 - `rspec spec`
 - This will run all tests on your local machine
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- AUTHORS -->
 
@@ -118,6 +115,11 @@ To run tests, run the following command:
 - GitHub: [@githubhandle](https://github.com/Okechukwu-muokwugwo)
 - Twitter: [@twitterhandle](https://twitter.com/excel4eva)
 - LinkedIn: [LinkedIn](LinkedIn.com/in/okeimuokwugwo)
+
+👤 **Kwasi Antwi Baayeh**
+
+- GitHub: [@Baayeh](https://github.com/Baayeh)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/kabaayeh)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,6 +152,7 @@ Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
+
 ## 🙏 Acknowledgments & Attribution <a name="acknowledgements"></a>
 
 - I would like to thank Microverse.
