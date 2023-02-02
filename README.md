@@ -89,13 +89,13 @@ Install this project with:
 
 - Install Ruby on Rails framework.
 - Use RubyGems as a software package system.
-- Dependencies _(a packet manager is required)_: then you run the command `npm install` in the terminal
+- Dependencies _(a packet manager is required)_: then you run the command `bundle install` in the terminal
 
 ### Usage
 
 To run the project, execute the following command:
 
-- `ruby -the name of the file-`
+- `rails server`
 - This will run the project in the terminal in the specified directory
 
 ### Run tests
