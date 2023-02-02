@@ -5,7 +5,9 @@
         Post #<%= @post.title %> by <%= @user.name %>
       </h3>
       <%= button_to 'Like Post', user_post_likes_path(@user, @post), method: :post, class: 'like_post_btn'%>
-      <%= button_to 'Delete Post', user_post_path(@user, @post), method: :delete, class: 'like_post_btn'%>
+      <% if can? :destroy, @post %>
+        <%= button_to 'Delete Post', user_post_path(@user, @post), method: :delete, class: 'like_post_btn'%>
+      <% end %>
       <p>
         Comments: <%= @post.comments_counter %> , Likes: <%= @post.likes_counter %>
       </p>
