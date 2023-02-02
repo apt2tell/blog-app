@@ -23,7 +23,7 @@ gem 'devise', github: 'heartcombo/devise', branch: 'ca-turbo'
 gem 'faker'
 gem 'responders', github: 'heartcombo/responders', branch: 'main'
 gem 'turbo-rails'
-
+gem 'cancancan'
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'stimulus-rails'
 
