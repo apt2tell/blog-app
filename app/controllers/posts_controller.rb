@@ -32,6 +32,7 @@ class PostsController < ApplicationController
     user = User.find(params[:user_id])
     post = user.posts.find(params[:id])
     post.destroy
+    user.decrement!(:posts_counter)
 
     respond_to do |format|
       format.html { redirect_to user_posts_path(user.id), notice: "Successfully removed post" }
