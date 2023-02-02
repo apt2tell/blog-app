@@ -21,9 +21,9 @@ class User < ApplicationRecord
     self.posts_counter = 0 if posts_counter.nil?
   end
 
-  ROLES = [:admin, :user]
+  ROLES = %i[admin user].freeze
 
   def admin?
-   role == :admin
+    role == :admin
   end
 end
