@@ -219,23 +219,28 @@ html {
   color: #0f0;
 }
 
-.new-user {
+div.field input,textarea {
+  width: 30.3rem;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+div.actions .sign-in-btn {
+  width: 31rem;
+  background: none;
+  margin: 1rem;
+  padding: .5rem;
+}
+
+div.actions .log-in-btn {
+  width: 31rem;
+  background: none;
+  margin: 1rem;
+  padding: .5rem;
+}
+
+form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-}
-
-.actions {
-  text-align: center;
-  width: 100%;
-  border: 1px solid black;
-  padding: 2px;
-  box-shadow: 1px 1px 1px 1px black;
-}
-
-.field input,
-textarea {
-  text-align: center;
-  width: 100%;
-  padding: 2px;
 }
