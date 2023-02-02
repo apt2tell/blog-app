@@ -210,3 +210,38 @@ html {
   display: flex;
   justify-content: space-around;
 }
+
+.notice {
+  color: #0f0;
+}
+
+.alert {
+  color: #0f0;
+}
+
+div.field input,
+textarea {
+  width: 30.3rem;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+div.actions .sign-in-btn {
+  width: 31rem;
+  background: none;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+div.actions .log-in-btn {
+  width: 31rem;
+  background: none;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
