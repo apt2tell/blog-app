@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
+
   def index
     @user = User.includes(posts: [:comments]).find(params[:user_id])
   end
@@ -24,6 +26,17 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     @post = @user.posts.find(params[:id])
     @post.comments.includes(:user)
+  end
+
+  def destroy
+    user = User.find(params[:user_id])
+    post = user.posts.find(params[:id])
+    post.destroy
+    user.decrement!(:posts_counter)
+
+    respond_to do |format|
+      format.html { redirect_to user_posts_path(user.id), notice: 'Successfully removed post' }
+    end
   end
 
   private
