@@ -22,7 +22,7 @@ RSpec.describe 'api/v1/users', type: :request do
   path '/api/v1/users/{id}' do
     # You'll want to customize the parameter types...
     parameter name: 'id', in: :path, type: :string, description: 'id'
-    user = User.create(name: "Tom", bio: "Teaccher from Mexico", photo: "http://")
+    user = User.create(name: "Tom", bio: "Teacher from Mexico", photo: "http://")
 
     get('show user') do
       response(200, 'successful') do
