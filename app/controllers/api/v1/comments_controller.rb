@@ -17,7 +17,8 @@ class Api::V1::CommentsController < ActionController::API
   end
 
   private
-    def comment_params
-      params.require(:comment).permit(:text)
-    end
+
+  def comment_params
+    params.require(:comment).permit(:text)
+  end
 end
